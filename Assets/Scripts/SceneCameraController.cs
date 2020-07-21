@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class SceneCameraController : MonoBehaviour
 {
-    public Transform target;
+   
 
 
     public Transform farBackground, middleBackground;
 
+
+   
 
     private float lastXPos;
     // Start is called before the first frame update
@@ -20,7 +22,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = new Vector3(target.position.x, transform.position.y, transform.position.z);
+        
 
 
         float amountToMoveX = transform.position.x - lastXPos;

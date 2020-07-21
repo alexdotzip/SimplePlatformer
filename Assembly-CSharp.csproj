@@ -63,8 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\SceneCameraController.cs" />
     <None Include="Assets\AssetPacks\Base pack\Enemies\enemies_spritesheet.txt" />
     <None Include="Assets\Character\Player\Player2\p2_spritesheet.txt" />
     <None Include="Assets\AssetPacks\Extra animations and enemies\Spritesheets\alienGreen.xml" />
@@ -701,6 +701,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>E:/Repos/Unity Learning Folder/5_SimplePlatformer/SimplePlatformer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>E:/Repos/Unity Learning Folder/5_SimplePlatformer/SimplePlatformer/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>E:/Repos/Unity Learning Folder/5_SimplePlatformer/SimplePlatformer/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

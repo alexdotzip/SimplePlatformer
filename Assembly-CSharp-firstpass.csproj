@@ -708,6 +708,12 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>E:/Repos/Unity Learning Folder/5_SimplePlatformer/SimplePlatformer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>E:/Repos/Unity Learning Folder/5_SimplePlatformer/SimplePlatformer/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>E:/Repos/Unity Learning Folder/5_SimplePlatformer/SimplePlatformer/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

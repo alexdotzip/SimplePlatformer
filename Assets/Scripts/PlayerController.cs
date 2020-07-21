@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         
-        myRigidbody.velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), myRigidbody.velocity.y );
+       
 
 
         //Basic Sprinting
@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed -= 4f;
         }
-
+        myRigidbody.velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), myRigidbody.velocity.y);
         isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
 
         if(isGrounded)

@@ -63,12 +63,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Checkpoint.cs" />
+    <Compile Include="Assets\Scripts\Core\CheckpointController.cs" />
+    <Compile Include="Assets\Scripts\Core\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Core\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Core\PlayerHealthController.cs" />
+    <Compile Include="Assets\Scripts\Core\SceneCameraController.cs" />
+    <Compile Include="Assets\Scripts\Core\UIController.cs" />
+    <Compile Include="Assets\Scripts\DamageOnContact.cs" />
     <Compile Include="Assets\Scripts\DamagePlayer.cs" />
+    <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
     <Compile Include="Assets\Scripts\GenericDamage.cs" />
     <Compile Include="Assets\Scripts\GenericHealth.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\PlayerHealthController.cs" />
-    <Compile Include="Assets\Scripts\SceneCameraController.cs" />
+    <Compile Include="Assets\Scripts\KillPlayer.cs" />
+    <Compile Include="Assets\Scripts\Pickup.cs" />
     <None Include="Assets\AssetPacks\Base pack\Enemies\enemies_spritesheet.txt" />
     <None Include="Assets\Character\Player\Player2\p2_spritesheet.txt" />
     <None Include="Assets\AssetPacks\Extra animations and enemies\Spritesheets\alienGreen.xml" />

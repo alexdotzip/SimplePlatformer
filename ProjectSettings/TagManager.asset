@@ -41,11 +41,20 @@ TagManager:
   - name: Background
     uniqueID: 3125189577
     locked: 0
+  - name: World
+    uniqueID: 342650225
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: World
-    uniqueID: 342650225
+  - name: Effects
+    uniqueID: 3693197211
+    locked: 0
+  - name: Pickup
+    uniqueID: 4179355471
+    locked: 0
+  - name: Enemies
+    uniqueID: 611489143
     locked: 0
   - name: Player
     uniqueID: 2366290583

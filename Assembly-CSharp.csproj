@@ -73,10 +73,12 @@
     <Compile Include="Assets\Scripts\DamageOnContact.cs" />
     <Compile Include="Assets\Scripts\DamagePlayer.cs" />
     <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\GenericDamage.cs" />
     <Compile Include="Assets\Scripts\GenericHealth.cs" />
     <Compile Include="Assets\Scripts\KillPlayer.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
+    <Compile Include="Assets\Scripts\Stompbox.cs" />
     <None Include="Assets\AssetPacks\Base pack\Enemies\enemies_spritesheet.txt" />
     <None Include="Assets\Character\Player\Player2\p2_spritesheet.txt" />
     <None Include="Assets\AssetPacks\Extra animations and enemies\Spritesheets\alienGreen.xml" />

@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     [SerializeField] private Rigidbody2D myRigidbody;
     [SerializeField] private CapsuleCollider2D myCollider;
+    [SerializeField] private float bounceForce;
 
     private bool isGrounded;
     public Transform groundCheckPoint;
@@ -36,6 +37,8 @@ public class PlayerController : MonoBehaviour
     public float knockbackLength;
     public float  knockbackForce;
     private float knockbackCounter;
+
+    
 
     private void Awake()
     {
@@ -141,5 +144,10 @@ public class PlayerController : MonoBehaviour
         myRigidbody.velocity = new Vector2(0f, knockbackForce);
 
         anim.SetTrigger("hurt");
+    }
+
+    public void Bounce()
+    {
+        myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, bounceForce);
     }
 }

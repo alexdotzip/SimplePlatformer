@@ -39,6 +39,7 @@ public class CheckpointController : MonoBehaviour
 
     public void SetSpawnPoint(Vector3 newSpawnPoint)
     {
+        AudioManager.instance.PlaySFX(4);
         spawnPoints = newSpawnPoint;
     }
 }

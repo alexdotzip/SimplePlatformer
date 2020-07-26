@@ -109,12 +109,14 @@ public class PlayerController : MonoBehaviour
             if (isGrounded)
             {
                 myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
+                AudioManager.instance.PlaySFX(0);
             }
             else
             {
                 if (canDoubleJump)
                 {
                     myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
+                    AudioManager.instance.PlaySFX(0);
                     canDoubleJump = false;
                 }
             }
@@ -142,7 +144,7 @@ public class PlayerController : MonoBehaviour
     {
         knockbackCounter = knockbackLength;
         myRigidbody.velocity = new Vector2(0f, knockbackForce);
-
+        AudioManager.instance.PlaySFX(3);
         anim.SetTrigger("hurt");
     }
 

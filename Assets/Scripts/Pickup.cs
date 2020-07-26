@@ -37,6 +37,7 @@ public class Pickup : MonoBehaviour
             {
                 LevelManager.instance.gemsCollected++;
                 isCollected = true;
+                AudioManager.instance.PlaySFX(1);
                 Destroy(gameObject);
 
                 Instantiate(pickupEffect, transform.position, transform.rotation);
@@ -50,6 +51,7 @@ public class Pickup : MonoBehaviour
                 {
                     PlayerHealthController.instance.Heal(amountToHeal);
                     isCollected = true;
+                    AudioManager.instance.PlaySFX(2);
                     Destroy(gameObject);
 
                     Instantiate(pickupEffect, transform.position, transform.rotation);

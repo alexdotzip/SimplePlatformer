@@ -54,6 +54,7 @@ public class PlayerHealthController : GenericHealth
                 //Debug.Log("Player Died!!");
 
                 Instantiate(deathEffect, transform.position, transform.rotation);
+                AudioManager.instance.PlaySFX(5);
                 LevelManager.instance.RespawnPlayer();
             }
             else

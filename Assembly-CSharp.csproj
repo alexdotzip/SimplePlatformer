@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\Scripts\Core\CheckpointController.cs" />
     <Compile Include="Assets\Scripts\Core\LevelManager.cs" />
@@ -79,22 +80,22 @@
     <Compile Include="Assets\Scripts\KillPlayer.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\Stompbox.cs" />
-    <None Include="Assets\AssetPacks\Base pack\Enemies\enemies_spritesheet.txt" />
+    <None Include="Assets\AssetPacks\Sprites\Base pack\Enemies\enemies_spritesheet.txt" />
     <None Include="Assets\Character\Player\Player2\p2_spritesheet.txt" />
-    <None Include="Assets\AssetPacks\Extra animations and enemies\Spritesheets\alienGreen.xml" />
-    <None Include="Assets\AssetPacks\Extra animations and enemies\Spritesheets\alienBlue.xml" />
+    <None Include="Assets\AssetPacks\Sprites\Extra animations and enemies\Spritesheets\alienGreen.xml" />
+    <None Include="Assets\AssetPacks\Sprites\Extra animations and enemies\Spritesheets\alienBlue.xml" />
     <None Include="Assets\Character\Player\Player1\p1_individualcontents\p1_spritesheet.txt" />
-    <None Include="Assets\AssetPacks\Base pack\Items\items_spritesheet.xml" />
-    <None Include="Assets\AssetPacks\Extra animations and enemies\Spritesheets\alienPink.xml" />
-    <None Include="Assets\AssetPacks\trees_and_bushes_pack\license.txt" />
-    <None Include="Assets\AssetPacks\Extra animations and enemies\Spritesheets\aliens.xml" />
+    <None Include="Assets\AssetPacks\Sprites\Base pack\Items\items_spritesheet.xml" />
+    <None Include="Assets\AssetPacks\Sprites\Extra animations and enemies\Spritesheets\alienPink.xml" />
+    <None Include="Assets\AssetPacks\Sprites\trees_and_bushes_pack\license.txt" />
+    <None Include="Assets\AssetPacks\Sprites\Extra animations and enemies\Spritesheets\aliens.xml" />
     <None Include="Assets\Character\Player\Player3\p3_spritesheet.txt" />
-    <None Include="Assets\AssetPacks\Mushroom expansion\PNG\spritesheet.xml" />
-    <None Include="Assets\AssetPacks\Extra animations and enemies\Spritesheets\enemies.xml" />
-    <None Include="Assets\AssetPacks\Base pack\Tiles\tiles_spritesheet.xml" />
-    <None Include="Assets\AssetPacks\Extra animations and enemies\Spritesheets\alienYellow.xml" />
-    <None Include="Assets\AssetPacks\Extra animations and enemies\Spritesheets\alienBeige.xml" />
-    <None Include="Assets\AssetPacks\Base pack\HUD\hud_spritesheet.xml" />
+    <None Include="Assets\AssetPacks\Sprites\Mushroom expansion\PNG\spritesheet.xml" />
+    <None Include="Assets\AssetPacks\Sprites\Extra animations and enemies\Spritesheets\enemies.xml" />
+    <None Include="Assets\AssetPacks\Sprites\Base pack\Tiles\tiles_spritesheet.xml" />
+    <None Include="Assets\AssetPacks\Sprites\Extra animations and enemies\Spritesheets\alienYellow.xml" />
+    <None Include="Assets\AssetPacks\Sprites\Extra animations and enemies\Spritesheets\alienBeige.xml" />
+    <None Include="Assets\AssetPacks\Sprites\Base pack\HUD\hud_spritesheet.xml" />
     <Reference Include="UnityEngine">
       <HintPath>E:/Unity Hub/2019.4.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

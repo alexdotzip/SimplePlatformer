@@ -22,8 +22,9 @@ public class DamagePlayer : GenericDamage
 
     public override void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player" && other.isTrigger)
+        if(other.tag == "Player" && !other.isTrigger)
         {
+            AudioManager.instance.PlaySFX(3);
             PlayerHealthController.instance.Damage(damage);
         }
     }

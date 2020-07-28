@@ -63,23 +63,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\Checkpoint.cs" />
+    <Compile Include="Assets\Scripts\Core\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Core\CheckpointController.cs" />
+    <Compile Include="Assets\Scripts\Core\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Core\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Core\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Core\PlayerHealthController.cs" />
     <Compile Include="Assets\Scripts\Core\SceneCameraController.cs" />
     <Compile Include="Assets\Scripts\Core\UIController.cs" />
-    <Compile Include="Assets\Scripts\DamageOnContact.cs" />
     <Compile Include="Assets\Scripts\DamagePlayer.cs" />
-    <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
-    <Compile Include="Assets\Scripts\EnemyController.cs" />
-    <Compile Include="Assets\Scripts\GenericDamage.cs" />
-    <Compile Include="Assets\Scripts\GenericHealth.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Checkpoint.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Pickup.cs" />
     <Compile Include="Assets\Scripts\KillPlayer.cs" />
-    <Compile Include="Assets\Scripts\Pickup.cs" />
+    <Compile Include="Assets\Scripts\Reusables\DamageOnContact.cs" />
+    <Compile Include="Assets\Scripts\Reusables\DestroyOverTime.cs" />
+    <Compile Include="Assets\Scripts\Reusables\GenericDamage.cs" />
+    <Compile Include="Assets\Scripts\Reusables\GenericHealth.cs" />
     <Compile Include="Assets\Scripts\Stompbox.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\PauseMenu.cs" />
     <None Include="Assets\AssetPacks\Sprites\Base pack\Enemies\enemies_spritesheet.txt" />
     <None Include="Assets\Character\Player\Player2\p2_spritesheet.txt" />
     <None Include="Assets\AssetPacks\Sprites\Extra animations and enemies\Spritesheets\alienGreen.xml" />

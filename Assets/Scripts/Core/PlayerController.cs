@@ -57,38 +57,41 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (knockbackCounter <= 0)
+        if (!PauseMenu.instance.isPaused)
         {
-            
-          //  SprintCheck();
-
-            myRigidbody.velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), myRigidbody.velocity.y);
-
-
-            JumpCheck();
-
-            if (myRigidbody.velocity.x < 0)
+            if (knockbackCounter <= 0)
             {
-                mySpriteRenderer.flipX = true;
+
+                //  SprintCheck();
+
+                myRigidbody.velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), myRigidbody.velocity.y);
+
+
+                JumpCheck();
+
+                if (myRigidbody.velocity.x < 0)
+                {
+                    mySpriteRenderer.flipX = true;
+                }
+                else if (myRigidbody.velocity.x > 0)
+                {
+                    mySpriteRenderer.flipX = false;
+                }
             }
-            else if (myRigidbody.velocity.x > 0)
+            else
             {
-                mySpriteRenderer.flipX = false;
+                knockbackCounter -= Time.deltaTime;
+                if (!mySpriteRenderer.flipX)
+                {
+                    myRigidbody.velocity = new Vector2(-knockbackForce, myRigidbody.velocity.y);
+                }
+                else
+                {
+                    myRigidbody.velocity = new Vector2(knockbackForce, myRigidbody.velocity.y);
+                }
             }
+
         }
-        else
-        {
-            knockbackCounter -= Time.deltaTime;
-            if(!mySpriteRenderer.flipX)
-            {
-                myRigidbody.velocity = new Vector2(-knockbackForce, myRigidbody.velocity.y);
-            } else
-            {
-                myRigidbody.velocity = new Vector2(knockbackForce, myRigidbody.velocity.y);
-            }
-        }
-
         anim.SetFloat("moveSpeed", Mathf.Abs(myRigidbody.velocity.x));
         anim.SetBool("isGrounded", isGrounded);
 

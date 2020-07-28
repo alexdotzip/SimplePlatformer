@@ -19,6 +19,11 @@ public class UIController : MonoBehaviour
 
     public Text myGemText;
 
+    public Image fadeScreen;
+    public float fadeSpeed;
+
+    private bool shouldFadeToBlack, shouldFadeFromBlack;
+     
 
     public void Awake()
     {
@@ -28,8 +33,38 @@ public class UIController : MonoBehaviour
     public void Start()
     {
         UpdateGemCount();
+        FadeFromBlack();
     }
+    void Update()
+    {
+        if(shouldFadeToBlack)
+        {
+            
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+            
+            if (fadeScreen.color.a == 1f)
+            {
+                
+                shouldFadeToBlack = false;
+            }
 
+
+        }
+
+        if (shouldFadeFromBlack)
+        {
+
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+
+            if (fadeScreen.color.a == 0f)
+            {
+
+                shouldFadeFromBlack = false;
+            }
+
+
+        }
+    }
 
     public void UpdateHearts()
     {
@@ -93,6 +128,18 @@ public class UIController : MonoBehaviour
     public void UpdateGemCount()
     {
         myGemText.text = LevelManager.instance.gemsCollected.ToString();
+    }
+
+    public void FadeToBlack()
+    {
+        shouldFadeToBlack = true;
+        shouldFadeFromBlack = false;
+    }
+
+    public void FadeFromBlack()
+    {
+        shouldFadeToBlack = false;
+        shouldFadeFromBlack = true;
     }
 
 }
